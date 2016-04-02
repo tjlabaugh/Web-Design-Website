@@ -92,9 +92,9 @@ li.dropdown {
  	visibility: hidden;
  	opacity: 0;
     position: absolute;
-    background-color: #101E29;
+    background-color: #36648b;
     min-width: 150px;
-	box-shadow: 2px 3px 3px #576169;
+	box-shadow: 3px 4px 3px #576169;
     z-index: 1;
     margin-left: -1px;
     border-left: 1px solid #fff;
@@ -110,10 +110,12 @@ li.dropdown {
     display: block;
     text-align: center;
     border-top: 1px solid #fff;
+    color: #fff;
 }
 
 .dropdown-content a:hover {
-	background-color: #36648b
+	background-color: #101E29;
+	color: #fff;
 }
 
 .dropbutton:hover .dropdown-content {
