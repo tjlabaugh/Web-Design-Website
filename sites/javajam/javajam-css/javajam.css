@@ -1,3 +1,6 @@
+header, main, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
 body {
 	background-image: url(../javajam-images/javabackground.gif);
 	background-color: #f5f5dc;
@@ -86,9 +89,11 @@ h3 {
 dt {
 	font-weight: bold;
 }
-.news {
+section {
 	margin-right: 20%;
 	margin-left: 20%;
+	overflow: auto;
+	font-size: 90%;
 }
 footer {
 	background-color: #d2b48c;
@@ -106,4 +111,101 @@ footer a:visited {
 }
 footer a:hover {
 	color: #f5f5dc;
+}
+#mobile {
+	display: none;
+}
+#desktop {
+	display: inline;
+}
+
+@media only screen and (max-width: 64em) {
+	body {
+		margin: 0;
+		background-color: #d2b48c;
+		background-image: none;
+	}
+
+	#wrapper {
+		min-width: 0;
+		width: auto;
+		box-shadow: none;
+	}
+
+	h1 {
+		margin: 0;
+		background-image: url(../javajam-images/javalogomobile.gif);
+	}
+
+	main {
+		margin: 0;
+	}
+
+	nav {
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+
+	nav ul {
+		text-align: center;
+	}
+
+	nav li {
+		display: inline;
+		padding: 0px .75em;
+	}
+}
+
+@media only screen and (max-widtH: 37.5em) {
+	nav li {
+		display: inline-block;
+		width: 5em;
+		font-size: 120%;
+		text-align: center;
+		box-shadow: 2px #330000;
+		background-color: #f5f5dc;
+		margin: 1%;
+		padding: 2.5%;
+	}
+
+	nav a {
+		display: block;
+	}
+
+	nav a:hover {
+		color: #333300;
+	}
+
+	main a:link {
+		color: #ffffff;
+	}
+
+	main a:visited {
+		color: #eaeaea;
+	}
+
+	main a:hover {
+		color: #ffd700;
+	}
+
+	section {
+		margin: 0;
+	}
+
+	section img {
+		display: none;
+	}
+
+	#hero {
+		height: auto;
+	}
+
+	#mobile {
+		display: inline;
+	}
+
+	#desktop {
+		display: none;
+	}
 }
