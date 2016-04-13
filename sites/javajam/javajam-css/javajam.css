@@ -1,12 +1,14 @@
 header, main, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
+
 body {
 	background-image: url(../javajam-images/javabackground.gif);
 	background-color: #f5f5dc;
 	color: #2e0000;
 	font-family: verdana, arial, sans-serif;
 }
+
 #wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -15,9 +17,11 @@ body {
 	max-width: 2048px;
 	box-shadow: 3px 3px #2e0000;
 }
+
 header {
 	background-color: #d2b48c;
 }
+
 nav {
 	width: 160px;
 	font-weight: bold;
@@ -25,20 +29,25 @@ nav {
 	padding: 10px;
 	float: left;
 }
+
 nav ul {
 	list-style-type: none;
 	padding-left: 0px;
 	font-size: 1.2em;
 }
+
 nav a:link {
 	color: #795240;
 }
+
 nav a:visited {
 	color: #a58366;
 }
+
 nav a:hover {
 	color: #f5f5dc;
 }
+
 nav a {
 	text-decoration: none;
 }
@@ -49,20 +58,24 @@ main {
 	background-color: #f5f5dc;
 	margin-left: 175px;
 }
+
 main img {
 	float: left;
 	padding-right: 2em;
 }
+
 main ul {
 	list-style-image: url("../javajam-images/marker.gif");
 	list-style-position: inside;
 }
+
 main div {
 	overflow: auto;
 	font-size: 90%;
 	padding-left: 5%;
 	padding-right: 5%;
 }
+
 #hero {
 	height: 300px;
 	color: #f5f5dc;
@@ -70,6 +83,7 @@ main div {
  	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
+
 h1 {
 	font-family: Georgia, "Times New Roman", serif;
 	line-height: 100px;
@@ -79,22 +93,27 @@ h1 {
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 }
+
 h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
+
 h3 {
 	background-color: #e6d6a9;
 	text-transform: uppercase;
 }
+
 dt {
 	font-weight: bold;
 }
+
 section {
 	margin-right: 20%;
 	margin-left: 20%;
 	overflow: auto;
 	font-size: 90%;
 }
+
 footer {
 	background-color: #d2b48c;
 	color: #000000;
@@ -103,20 +122,38 @@ footer {
 	text-align: center;
 	padding: 10px;
 }
+
 footer a:link {
 	color: #2e0000;
 }
+
 footer a:visited {
 	color: #000000;
 }
+
 footer a:hover {
 	color: #f5f5dc;
 }
+
 #mobile {
 	display: none;
 }
+
 #desktop {
 	display: inline;
+}
+
+table {
+	margin: auto;
+	width: 80%;
+}
+
+td th {
+	padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #d2b48c;
 }
 
 @media only screen and (max-width: 64em) {
