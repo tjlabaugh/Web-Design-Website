@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>JavaJam Coffee House Menu</title>
+		<title>JavaJam Coffee House Jobs</title>
 		<link rel="stylesheet" href="javajam-css/javajam.css" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- [if lt IE 9]>
@@ -23,30 +23,24 @@
 				</ul>
 			</nav>
 			<main>
-				<h2>Coffee at JavaJam</h2>
-				<table>
-					<tr>
-						<th>Just Java</th>
-						<td>
-							Regular House blend, decaffeinated coffee, or flavor of the day.<br />
-							Endless Cup $2.00
-						</td>
-					</tr>
-					<tr>
-						<th>Cafe au Lait</th>
-						<td>
-							House blended coffee infused into a smooth, steamed milk.<br />
-							Single $2.00 Double $3.00
-						</td>
-					</tr>
-					<tr>
-						<th>Iced Cappuccino</th>
-						<td>
-							Sweetened espresso blended with icy-cold milk and served in a chilled glass<br />
-							Single $4.75 Double $5.75
-						</td>
-					</tr>
-				</table>
+				<h2>Jobs at JavaJam</h2>
+				<p>
+					Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *.
+				</p>
+				<form method="post" action="http://webdevbasics.net/scripts/javajam.php">
+					<label for="myName">*Name:</label>
+					<input type="text" name="myName" id="myName" required="required">
+					<label for="myEmail">*E-mail:</label>
+					<input type="email" name="myEmail" id="myEmail" required="required">
+					<label for="startDate">Start Date</label>
+					<input type="date" name="startDate" id="startDate">
+					<label for="myExperience">*Experience:</label>
+					<textarea name="myExperience" id="myExperience"
+								rows="2" cols="20"
+								required="required">
+					</textarea>
+					<input type="submit" value="Apply Now">
+				</form>
 			</main>
 			<footer>
 				Copyright &copy; 2016 JavaJam Coffee House <br />

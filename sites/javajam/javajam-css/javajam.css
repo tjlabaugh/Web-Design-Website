@@ -156,6 +156,28 @@ tr:nth-of-type(odd) {
 	background-color: #d2b48c;
 }
 
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 5px;
+}
+
+input {
+	display: block;
+	margin-bottom: 20px;
+}
+
+textarea {
+	display: block;
+	margin-bottom: 20px;
+}
+
+input[type="submit"] {
+	margin-left: 130px;
+}
+
 @media only screen and (max-width: 64em) {
 	body {
 		margin: 0;
@@ -194,7 +216,7 @@ tr:nth-of-type(odd) {
 	}
 }
 
-@media only screen and (max-widtH: 37.5em) {
+@media only screen and (max-width: 37.5em) {
 	nav li {
 		display: inline-block;
 		width: 5em;
@@ -234,6 +256,15 @@ tr:nth-of-type(odd) {
 		display: none;
 	}
 
+	label {
+		float: none;
+		text-align: left;
+	}
+
+	input[type="submit"] {
+		margin-left: 0;
+	}
+
 	#hero {
 		height: auto;
 	}
@@ -245,4 +276,5 @@ tr:nth-of-type(odd) {
 	#desktop {
 		display: none;
 	}
+
 }
