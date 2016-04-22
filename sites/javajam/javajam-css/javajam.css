@@ -50,6 +50,7 @@ nav a:hover {
 
 nav a {
 	text-decoration: none;
+	transition: color 3s ease-out;
 }
 
 main {
@@ -176,6 +177,11 @@ textarea {
 
 input[type="submit"] {
 	margin-left: 130px;
+}
+
+audio {
+	clear: both;
+	padding-top: 20px;
 }
 
 @media only screen and (max-width: 64em) {
